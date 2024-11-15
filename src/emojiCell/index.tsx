@@ -1,19 +1,27 @@
-import {Text, TouchableOpacity} from 'react-native'
-import {Emoji} from '../interfaces'
+import { Text, TouchableOpacity } from "react-native";
+import { Emoji } from "../interfaces";
 
 interface Props {
-	emoji: Emoji
-	colSize: number
+  emoji: Emoji;
+  colSize: number;
 
-	onPress(): void
+  onPress(): void;
 }
 
-export const EmojiCell = ({emoji, colSize, onPress}: Props) => (
-	<TouchableOpacity
-		activeOpacity={0.5}
-		style={{width: colSize, height: colSize, alignItems: 'center', justifyContent: 'center'}}
-		onPress={onPress}
-	>
-		<Text style={{color: '#fff', fontSize: colSize - 15}} children={emoji.emoji}/>
-	</TouchableOpacity>
-)
+export const EmojiCell = ({ emoji, colSize, onPress }: Props) => (
+  <TouchableOpacity
+    activeOpacity={0.5}
+    style={{
+      width: colSize,
+      height: colSize,
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+    onPress={onPress}
+  >
+    <Text
+      style={{ color: "#fff", fontSize: Math.max(colSize - 15, 1) }}
+      children={emoji.emoji}
+    />
+  </TouchableOpacity>
+);
