@@ -1,4 +1,4 @@
-# React ⚛️ Native ☎️ Emoji 😊 Picker ⛏️
+# React ⚛️ Native ☎️ Emoji 😊 Selector ⛏️
 
 ### Super light weight 🪶
 
@@ -21,14 +21,14 @@ To be or not to be, that is the question
 
 ### Install 🛠️
 
-`npm i rn-emoji-picker` or `yarn rn-emoji-picker` you know what to do!
+`npm i rn-emoji-selector` or `yarn rn-emoji-selector` you know what to do!
 
 ### Example usage 👨‍💻
 
 ```javascript
 import {StyleSheet, View} from 'react-native'
-import EmojiPicker, {emojiFromUtf16} from "rn-emoji-picker"
-import {emojis} from "rn-emoji-picker/dist/data"
+import EmojiPicker, {emojiFromUtf16} from "rn-emoji-selector"
+import {emojis} from "rn-emoji-selector/dist/data"
 // recommend using an asset loader for emojis
 // or fetching over network for decreased bundle size
 import {useState} from "react"
